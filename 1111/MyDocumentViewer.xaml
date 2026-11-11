@@ -7,14 +7,9 @@
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
         Title="MyDocumentViewer" Height="450" Width="800">
-    <Window.CommandBindings>
-        <CommandBinding Command="ApplicationCommands.New" Executed="NewCommand_Executed"/>
-        <CommandBinding Command="ApplicationCommands.Open" Executed="OpenCommand_Executed"/>
-        <CommandBinding Command="ApplicationCommands.Save" Executed="SaveCommand_Executed"/>
-    </Window.CommandBindings>
     <DockPanel>
-        <ToolBarTray Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" DockPanel.Dock="Top" Background="Aqua">
-            <ToolBar x:Name="ApplicationToolbar" Height="40" Width="184" Background="Beige">
+        <ToolBarTray Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" DockPanel.Dock="Top" Background="#FF9EB7AD">
+            <ToolBar x:Name="ApplicationToolbar" Height="40" Width="184" Background="#FF78BBCC">
                 <Button x:Name="NewButton" Height="38" Width="38" Command="ApplicationCommands.New">
                     <Image Height="32" Width="32" Source="/nwebutton.png"/>
                 </Button>
@@ -28,7 +23,7 @@
                     <Image Height="32" Width="32" Source="/trashbutton.png"/>
                 </Button>
             </ToolBar>
-            <ToolBar x:Name="EditingToolbar" Height="40" Width="612" Background="#FFEEDDAC">
+            <ToolBar x:Name="EditingToolbar" Height="40" Width="612" Background="#FF6E6FBB">
                 <ToggleButton x:Name="BoldButton" Height="38" Width="38">
                     <Image Height="32" Width="32" Source="/img/bold.png"/>
                 </ToggleButton>
@@ -43,8 +38,8 @@
                 <ComboBox x:Name="FontSizeComboBox" HorizontalAlignment="Left" VerticalAlignment="Center" Width="50" Height="38" Margin="5,0,0,0"/>
             </ToolBar>
         </ToolBarTray>
-        <StatusBar Height="30" DockPanel.Dock="Bottom" Background="LightGray"/>
-        <RichTextBox x:Name="MainRichTextBox" Background="#FFEFEFEC">
+        <StatusBar Height="30" DockPanel.Dock="Bottom" Background="#FF5B5377"/>
+        <RichTextBox x:Name="MainRichTextBox" Background="#FF8DB8C3">
             <FlowDocument/>
         </RichTextBox>
     </DockPanel>
