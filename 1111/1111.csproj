@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>_1111</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="bold.png" />
+    <None Remove="italic-removebg-preview.png" />
+    <None Remove="nwebutton.png" />
+    <None Remove="openbutton.png" />
+    <None Remove="savebutton.png" />
+    <None Remove="trashbutton.png" />
+    <None Remove="underline-removebg-preview.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="5.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bold.png" />
+    <Resource Include="italic-removebg-preview.png" />
+    <Resource Include="nwebutton.png" />
+    <Resource Include="openbutton.png" />
+    <Resource Include="savebutton.png" />
+    <Resource Include="trashbutton.png" />
+    <Resource Include="underline-removebg-preview.png" />
+  </ItemGroup>
+
+</Project>
